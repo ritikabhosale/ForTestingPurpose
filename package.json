@@ -27,6 +27,9 @@
     "react-native-animation-library": "^0.0.8"
   },
   "jest": {
+    "coverageReporters": [
+      "text-summary"
+    ],
     "preset": "react-native",
     "setupFilesAfterEnv": [
       "@testing-library/jest-native/extend-expect"
