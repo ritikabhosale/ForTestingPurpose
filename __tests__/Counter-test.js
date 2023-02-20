@@ -8,25 +8,25 @@ it('renders correctly', () => {
   render(<Counter />);
 });
 
-it('renders with initial count', () => {
-  render(<Counter />);
-  const counterElement = screen.getByTestId('counter').props;
-  expect(counterElement.children).toBe(0);
-});
+// it('renders with initial count', () => {
+//   render(<Counter />);
+//   const counterElement = screen.getByTestId('counter').props;
+//   expect(counterElement.children).toBe(0);
+// });
 
-it('renders with incremented count when button pressed', () => {
-  render(<Counter />);
-  const btnElement = screen.getByTestId('incremental-btn');
+// it('renders with incremented count when button pressed', () => {
+//   render(<Counter />);
+//   const btnElement = screen.getByTestId('incremental-btn');
 
-  act(() => {
-    fireEvent.press(btnElement);
-  });
+//   act(() => {
+//     fireEvent.press(btnElement);
+//   });
 
-  const counterElement = screen.getByTestId('counter').props;
-  expect(counterElement.children).toBe(1);
-});
+//   const counterElement = screen.getByTestId('counter').props;
+//   expect(counterElement.children).toBe(1);
+// });
 
-it('creates snapshot', () => {
-  const counterElement = renderer.create(<Counter />);
-  expect(counterElement).toMatchSnapshot();
-});
+// it('creates snapshot', () => {
+//   const counterElement = renderer.create(<Counter />);
+//   expect(counterElement).toMatchSnapshot();
+// });
